@@ -1,0 +1,10 @@
+// Set up Firestore in your project directory, creates a .rules file
+firebase init firestore
+match /movies {
+      allow get: if true;
+      allow list: if true;
+
+      allow update: if false;
+      allow create: if false;
+      allow delete: if false;
+    }
